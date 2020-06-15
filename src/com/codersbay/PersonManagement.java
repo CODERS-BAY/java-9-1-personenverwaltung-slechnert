@@ -48,7 +48,7 @@ public class PersonManagement {
         PERSONS.remove(new Person(firstName, lastName, age, isMale, address, isHealthy));
     }
 
-    private static void printPersons(ArrayList<Person> PERSONS) {
+    static void printPersons() {
         for (Person p : PERSONS) {
             System.out.println(p.toString());
         }
