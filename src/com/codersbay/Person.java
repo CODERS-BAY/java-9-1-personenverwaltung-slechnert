@@ -57,16 +57,12 @@ public class Person {
     public boolean equals(Object obj) {
         Person other = (Person) obj;
 
-        if (other.firstName == this.firstName &&
-                other.lastName == this.lastName &&
-                other.age == this.age &&
+        return (other.firstName.equals(this.firstName) &&
+                other.lastName.equals(this.lastName) &&
+                other.age.equals(this.age) &&
                 other.isMale == this.isMale &&
-                other.address == this.address &&
-                other.isHealthy == this.isHealthy) {
-            return true;
-        } else {
-            return false;
-        }
+                other.address.equals(this.address) &&
+                other.isHealthy == this.isHealthy);
     }
 
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PersonManagement {
-    static List<Person> PERSONS = new ArrayList();
+    static private List<Person> PERSONS = new ArrayList();
 
 
     private static void addPerson(String firstName, String lastName, Integer age) {
@@ -46,6 +46,12 @@ public class PersonManagement {
 
     public static void removePerson(String firstName, String lastName, Integer age, Boolean isMale, String address, Boolean isHealthy) {
         PERSONS.remove(new Person(firstName, lastName, age, isMale, address, isHealthy));
+    }
+
+    private static void printPersons(ArrayList<Person> PERSONS) {
+        for (Person p : PERSONS) {
+            System.out.println(p.toString());
+        }
     }
 }
 
