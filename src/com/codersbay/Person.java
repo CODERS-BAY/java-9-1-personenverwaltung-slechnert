@@ -1,6 +1,7 @@
 package com.codersbay;
 
-import static com.codersbay.PersonManagement.PERSONS;
+import java.util.Objects;
+
 
 public class Person {
     private String firstName;
@@ -48,6 +49,7 @@ public class Person {
 
     }
 
+
     @Override
     public int hashCode() {
         return super.hashCode();
@@ -64,8 +66,6 @@ public class Person {
                 other.address.equals(this.address) &&
                 other.isHealthy == this.isHealthy);
     }
-
-
     @Override
     public String toString() {
         return "Person{" +

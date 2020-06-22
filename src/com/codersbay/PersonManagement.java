@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PersonManagement {
-    static private List<Person> PERSONS = new ArrayList();
+    private static List<Person> PERSONS = new ArrayList();
 
 
     private static void addPerson(String firstName, String lastName, Integer age) {
@@ -54,12 +54,3 @@ public class PersonManagement {
         }
     }
 }
-
-
-  /*  public Person(String firstName, String lastName, Integer age, Boolean isMale, String address, Boolean isHealthy) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.isMale = isMale;
-        this.address = address;
-        this.isHealthy = isHealthy; */
